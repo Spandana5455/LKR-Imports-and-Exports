@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.hero-section {
+    background-image: url('./images/bg1.png'); 
+    border-bottom: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    position: relative;                
+    z-index: 1;                       
+    overflow: visible !important;
+}
+
+.custom-text {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #003AA5;
+    padding-right: 150px;
+}
+

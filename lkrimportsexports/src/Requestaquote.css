@@ -1,0 +1,87 @@
+.request-a-quote-heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: #003AA5;
+}
+.request-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+.request-body {
+    font-size: 20px;
+    font-weight: 400;
+}
+.form-request-group {
+    padding-left: 250px;
+    padding-right: 250px;
+}
+.request-a-quote-button-btn {
+    background-color: #003AA5;
+    border-color: #003AA5;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.request-a-quote-button-btn {
+    background-color: #003AA5;
+    border-color: #003AA5;
+}
+
+@media (max-width: 767px) {
+    .request-a-quote-heading {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .request-title {
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    .request-body {
+      font-size: 16px;
+      text-align: center;
+    }
+  
+    .form-request-group {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .request-a-quote-button-btn {
+      font-size: 18px;
+      padding: 8px 20px;
+      width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .request-a-quote-heading {
+      font-size: 28px;
+    }
+  
+    .request-title {
+      font-size: 20px;
+    }
+  
+    .request-body {
+      font-size: 18px;
+    }
+  
+    .form-request-group {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  
+    .request-a-quote-button-btn {
+      font-size: 20px;
+      padding: 10px 25px;
+    }
+}
+  
+
+  

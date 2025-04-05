@@ -1,0 +1,145 @@
+.import-export-section {
+    background-image: url('./images/importpage2.png'); 
+    border-bottom: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    position: relative;                
+    z-index: 1;                       
+    overflow: visible !important;
+}
+.import-text {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #003AA5;
+    padding-right: 150px;
+}
+.import-heading {
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.import-head {
+    font-size: 24px;
+    font-weight: 600;
+}
+.importhead {
+    font-size: 20px;
+}
+.importtext {
+    font-size: 20px;
+    font-weight: 400;
+}
+.import-points {
+    font-size: 20px;
+    font-weight: 400;
+    list-style:inside;
+}
+.export-head {
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 50px;
+    border-bottom: 3.5px solid #CA2127;
+    display: inline;
+}
+.import-bullet-points {
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 0;
+}
+
+
+@media (max-width: 1200px) {
+    .import-text {
+        font-size: 54px;
+        padding-right: 100px;
+    }
+    .import-heading, .export-head {
+        font-size: 28px;
+    }
+    .import-head {
+        font-size: 22px;
+    }
+    .importtext, .import-points, .import-bullet-points {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .import-text {
+        font-size: 48px;
+        padding-right: 50px;
+    }
+    .import-heading, .export-head {
+        font-size: 26px;
+    }
+    .import-head {
+        font-size: 20px;
+    }
+    .importtext, .import-points, .import-bullet-points {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .import-text {
+        font-size: 42px;
+        padding-right: 30px;
+        line-height: 1.3;
+    }
+    .import-heading, .export-head {
+        font-size: 24px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    .import-head {
+        font-size: 18px;
+    }
+    .importtext, .import-points, .import-bullet-points {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .import-text {
+        font-size: 36px;
+        padding-right: 10px;
+        text-align: center;
+    }
+    .import-heading, .export-head {
+        font-size: 22px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .import-head {
+        font-size: 16px;
+    }
+    .importtext, .import-points, .import-bullet-points {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .import-text {
+        font-size: 30px;
+        padding: 0 5px;
+        text-align: center;
+    }
+    .import-heading, .export-head {
+        font-size: 20px;
+        text-align: center;
+    }
+    .import-head {
+        font-size: 14px;
+    }
+    .importtext, .import-points, .import-bullet-points {
+        font-size: 12px;
+        padding-left: 5px;
+    }
+}

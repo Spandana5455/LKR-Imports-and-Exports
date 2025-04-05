@@ -1,0 +1,77 @@
+.kitchen-furniture-section {
+    background-image: url('./images/kitchenfurniture.png');
+    border-bottom: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    position: relative;                
+    z-index: 1;                       
+    overflow: visible !important;
+}
+.kitchen-furniture-heading {
+    font-size: 32px;
+    font-weight: 700;
+}
+.kitchenfurniture-head {
+    font-size: 26px;
+    font-weight: 600;
+}
+.kitchen-furniture-body {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media (max-width: 767px) {
+    .kitchen-furniture-section {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .kitchen-furniture-heading {
+      font-size: 24px;
+    }
+  
+    .kitchenfurniture-head {
+      font-size: 18px;
+    }
+  
+    .kitchen-furniture-body {
+      font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .kitchen-furniture-section {
+      padding: 40px;
+      text-align: center;
+    }
+  
+    .kitchen-furniture-heading {
+      font-size: 28px;
+    }
+  
+    .kitchenfurniture-head {
+      font-size: 22px;
+    }
+  
+    .kitchen-furniture-body {
+      font-size: 18px;
+    }
+}
+  
+.kitchen-furniture-heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+.kitchenfurniture-head {
+  font-size: 26px;
+  font-weight: 600;
+}
+.kitchen-furniture-body {
+  font-size: 20px;
+  font-weight: 400;
+}

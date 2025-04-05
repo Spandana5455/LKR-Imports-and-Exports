@@ -1,0 +1,69 @@
+.hotel-furniture-section {
+    background-image: url('./images/hotelfurniture\ \(3\).png');
+    border-bottom: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    position: relative;                
+    z-index: 1;                       
+    overflow: visible !important;
+}
+.hotel-furniture-heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+.hotelfurniture-head {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+.hotel-furniture-body {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+@media (max-width: 767px) {
+    .hotel-furniture-section {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .hotel-furniture-heading {
+      font-size: 24px;
+    }
+  
+    .hotelfurniture-head {
+      font-size: 18px;
+    }
+  
+    .hotel-furniture-body {
+      font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hotel-furniture-section {
+      padding: 40px;
+      text-align: center;
+    }
+  
+    .hotel-furniture-heading {
+      font-size: 28px;
+    }
+  
+    .hotelfurniture-head {
+      font-size: 20px;
+    }
+  
+    .hotel-furniture-body {
+      font-size: 18px;
+    }
+}
+  
+  

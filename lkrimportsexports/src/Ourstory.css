@@ -1,0 +1,118 @@
+.our-story-theory {
+    padding-left: 40px;
+}
+
+.our-story-heading {
+    font-size: 64px;
+    font-weight: 700;
+    color: #003AA5;
+    padding-top: 40px;
+    padding-bottom:20px ;
+}
+.our-story-img {
+    height: 450px;
+    width: 650px;
+    padding-bottom: 20px;
+}
+.our-story-head {
+    font-size: 24px;
+    font-weight: 700;
+}
+.our-story-promise {
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 3px solid black;
+    display: inline;
+}
+.our-story-body {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/* Mobile Devices (max-width: 576px) */
+@media (max-width: 576px) {
+    .our-story-heading {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .our-story-img {
+        height: auto;
+        width: 100%;
+    }
+
+    .our-story-head {
+        font-size: 20px;
+    }
+
+    .our-story-body {
+        font-size: 16px;
+    }
+
+    .our-story-theory {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .our-story-promise {
+        font-size: 20px;
+    }
+}
+
+/* Tablet Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .our-story-heading {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .our-story-img {
+        height: 350px;
+        width: 100%;
+    }
+
+    .our-story-head {
+        font-size: 22px;
+    }
+
+    .our-story-body {
+        font-size: 18px;
+    }
+
+    .our-story-theory {
+        padding-left: 20px;
+    }
+}
+
+/* Small Desktops (max-width: 992px) */
+@media (max-width: 992px) {
+    .our-story-heading {
+        font-size: 64px;
+    }
+
+    .our-story-img {
+        height: 400px;
+        width: 100%;
+    }
+
+    .our-story-body {
+        font-size: 18px;
+    }
+}
+
+/* Large Desktops (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .our-story-heading {
+        font-size: 96px;
+    }
+
+    .our-story-img {
+        height: 450px;
+        width: 650px;
+    }
+
+    .our-story-body {
+        font-size: 20px;
+    }
+}

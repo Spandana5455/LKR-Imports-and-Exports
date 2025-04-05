@@ -1,0 +1,66 @@
+.office-furniture-section {
+    background-image: url('./images/officefurniture.png');
+    border-bottom: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    position: relative;                
+    z-index: 1;                       
+    overflow: visible !important;
+}
+.office-furniture-heading {
+    font-size: 32px;
+    font-weight: 600;
+}
+.office-furniture-head {
+    font-size: 24px;
+    font-weight: 600;
+}
+.office-furniture-body {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .office-furniture-section {
+      padding: 40px;
+      text-align: center;
+    }
+  
+    .office-furniture-heading {
+      font-size: 28px;
+    }
+  
+    .office-furniture-head {
+      font-size: 20px;
+    }
+  
+    .office-furniture-body {
+      font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .office-furniture-section {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .office-furniture-heading {
+      font-size: 24px;
+    }
+  
+    .office-furniture-head {
+      font-size: 18px;
+    }
+  
+    .office-furniture-body {
+      font-size: 16px;
+    }
+}
+  
+  

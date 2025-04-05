@@ -1,0 +1,132 @@
+.how-imports-work-section {
+    background-image: url('./images/howimportspage4.png');
+    border-bottom: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    position: relative;                
+    z-index: 1;                       
+    overflow: visible !important;
+}
+.how-imports-work-text {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #003AA5;
+    padding-right: 90px;
+}
+.how-imports-heading {
+    font-size: 32px;
+    font-weight: 700;
+}
+.how-to-success {
+    background-color: #003AA580;
+    border-radius: 3px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.how-import-head {
+    font-size: 32px;
+    font-weight: 700;
+}
+.how-import-text {
+    font-size: 20px;
+    font-weight: 400;
+}
+.how-import-points {
+    font-size: 24px;
+    font-weight: 600;
+}
+.how-import-last-points {
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 90px;
+}
+
+
+/* For large screens (desktops) */
+@media (max-width: 1200px) {
+    .how-imports-work-text {
+        font-size: 56px;
+        padding-right: 60px;
+    }
+    .how-import-last-points {
+        padding-left: 60px;
+    }
+}
+
+/* For tablets and smaller desktops */
+@media (max-width: 992px) {
+    .how-imports-work-text {
+        font-size: 48px;
+        padding-right: 40px;
+    }
+    .how-import-heading,
+    .how-import-head {
+        font-size: 28px;
+    }
+    .how-import-text {
+        font-size: 18px;
+    }
+    .how-import-points {
+        font-size: 22px;
+    }
+    .how-import-last-points {
+        padding-left: 40px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .how-imports-work-section {
+        min-height: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .how-imports-work-text {
+        font-size: 36px;
+        padding-right: 0;
+    }
+    .how-import-heading,
+    .how-import-head {
+        font-size: 24px;
+    }
+    .how-import-text {
+        font-size: 16px;
+    }
+    .how-import-points {
+        font-size: 20px;
+    }
+    .how-import-last-points {
+        padding-left: 20px;
+    }
+    .how-to-success {
+        padding: 20px;
+    }
+}
+
+/* For smaller mobile screens */
+@media (max-width: 480px) {
+    .how-imports-work-text {
+        font-size: 28px;
+    }
+    .how-import-heading,
+    .how-import-head {
+        font-size: 20px;
+    }
+    .how-import-text {
+        font-size: 14px;
+    }
+    .how-import-points {
+        font-size: 18px;
+    }
+    .how-import-last-points {
+        padding-left: 10px;
+    }
+    .how-to-success {
+        padding: 15px;
+    }
+}

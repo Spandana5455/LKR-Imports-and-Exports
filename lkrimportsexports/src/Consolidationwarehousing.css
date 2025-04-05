@@ -1,0 +1,250 @@
+.consolidation-warehousing-section {
+    background-image: url('./images/consolidationwarehousing.png');
+    border-bottom: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    position: relative;                
+    z-index: 1;                       
+    overflow: visible !important;
+}
+.consolidation-warehousing-item {
+    font-size: 64px;
+    font-weight: 700;
+    color: #003AA5;
+}
+.organizing-storing-section {
+    background-color: #B3C4E4;
+}
+.organizing-storing-heading {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+.organizing-storing-body {
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.organizing-storing-body-lastnote {
+    font-size: 24px;
+    font-weight: 400;
+    color: #CA2127;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.warehousing-section {
+    background-color: #B3C4E433;
+}
+.warehousing-text {
+    font-size: 64px;
+    font-weight: 700;
+    color: #00000080;
+    padding-right: 120px;
+    padding-top: 40px;
+}
+.warehousing-img {
+    height: 541px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.advantages-heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.advantages-card {
+  background-color: #F0F3FA;
+  border-radius: 10px;
+  height: 100%; /* Let it fill column height */
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-title {
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #B3C4E4;
+  color: black;
+  text-align: center;
+  padding: 12px;
+}
+
+.advantages-body {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 30px 10px 0;
+}
+
+/* Fix overflow on medium devices */
+@media (min-width: 767px) and (max-width: 998px) {
+  .advantages-title {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .advantages-body {
+    font-size: 16px;
+    padding: 20px 8px 0;
+  }
+
+  .advantages-card {
+    height: auto;
+  }
+}
+
+/* For small screens */
+@media (max-width: 576px) {
+  .advantages-title {
+    font-size: 18px;
+    padding: 10px 6px;
+  }
+
+  .advantages-body {
+    font-size: 15px;
+    padding: 20px 6px 0;
+  }
+
+  .advantages-heading {
+    font-size: 24px;
+  }
+
+  .advantages-card {
+    height: auto;
+  }
+}
+
+/* ---------------- Extra Small Devices (max-width: 576px) ---------------- */
+@media (max-width: 576px) {
+  .advantages-heading {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .advantages-title {
+    font-size: 18px;
+    padding: 10px 5px;
+  }
+
+  .advantages-body {
+    font-size: 16px;
+    padding: 20px 5px 0;
+  }
+
+  .advantages-card {
+    height: auto;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (min-width: 767px) and (max-width: 998px) {
+  .advantages-card {
+    height: auto !important;
+    padding-bottom: 20px;
+  }
+
+  .advantages-body {
+    font-size: 16px;
+    padding: 20px 12px 0;
+  }
+
+  .advantages-title {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+/* ---------------- Small to Medium Devices (577px - 767px) ---------------- */
+@media (min-width: 577px) and (max-width: 767px) {
+  .advantages-heading {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .advantages-title {
+    font-size: 20px;
+  }
+
+  .advantages-body {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+
+  .advantages-card {
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+/* ---------------- Tablets and Medium Devices (768px - 1024px) ---------------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .advantages-heading {
+    font-size: 28px;
+  }
+
+  .advantages-title {
+    font-size: 22px;
+  }
+
+  .advantages-body {
+    font-size: 18px;
+  }
+
+  .advantages-card {
+    height: 250px;
+  }
+}
+
+/* ---------------- Medium to Large Devices (1025px - 1284px) ---------------- */
+@media (min-width: 1025px) and (max-width: 1284px) {
+  .advantages-card {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .advantages-title {
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  .advantages-body {
+    font-size: 16px;
+    padding: 20px 12px 0;
+  }
+}
+
+/* ---------------- Large Devices (1285px - 1199px) ---------------- */
+@media (min-width: 1285px) and (max-width: 1199px) {
+  .advantages-card {
+    height: 280px;
+  }
+
+  .advantages-heading {
+    font-size: 30px;
+  }
+
+  .advantages-title {
+    font-size: 22px;
+  }
+
+  .advantages-body {
+    font-size: 18px;
+  }
+}
+
+/* ---------------- Extra Large Screens (min-width: 1200px) ---------------- */
+@media (min-width: 1200px) {
+  .advantages-heading {
+    font-size: 34px;
+  }
+
+  .advantages-card {
+    height: 320px;
+  }
+}

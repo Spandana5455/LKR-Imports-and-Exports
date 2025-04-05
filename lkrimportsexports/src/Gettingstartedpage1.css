@@ -1,0 +1,234 @@
+.Heading {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.custom-card-one {
+    background-color: #B3C4E4;
+    background-size: cover;
+    width: 100vw; 
+    margin-left: calc(-50vw + 50%); /* Center the content */
+    border-radius: 5px;
+}
+.step-custom {
+    color: #003AA5;
+    font-size: 32px;
+    font-weight: 600;
+    padding-left: 70px;
+}
+.gs-que {
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 170px;
+}
+.gs-text{
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 170px;
+    padding-right: 50px;
+}
+.gs-points {
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 170px;
+}
+.custom-card-two {
+    background-color: #F0F3FA;
+    background-size: cover;
+    width: 100vw; 
+    margin-left: calc(-50vw + 50%); /* Center the content */
+    border-radius: 5px;
+}
+.gs-que1 {
+    padding-left: 170px;
+    padding-top: 5px;
+}
+.custom-card-three {
+    background-color: #B3C4E4;
+    background-size: cover;
+    width: 100vw; 
+    margin-left: calc(-50vw + 50%); /* Center the content */
+    border-radius: 5px;
+}
+.custom-card-four {
+    background-color: #F0F3FA;
+    background-size: cover;
+    width: 100vw; 
+    margin-left: calc(-50vw + 50%); /* Center the content */
+    border-radius: 5px;
+}
+.custom-card-five {
+    background-color: #B3C4E4;
+    background-size: cover;
+    width: 100vw; 
+    margin-left: calc(-50vw + 50%); /* Center the content */
+    border-radius: 5px;
+}
+.custom-card-six {
+    background-color: #F0F3FA;
+    background-size: cover;
+    width: 100vw; 
+    margin-left: calc(-50vw + 50%); /* Center the content */
+    border-radius: 5px;
+}
+.custom-part2 {
+    border: 1px solid black;
+    width: 100vw; 
+    margin-left: calc(-50vw + 50%); /* Center the content */
+    padding-left: 70px;
+    padding-right: 50px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.gsp-que{
+    font-size: 24px;
+    font-weight: 700;
+}
+.gsp-text {
+    font-size: 16px;
+    font-weight: 400;
+}
+.gsp-que1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.gs-faq-heading{
+    font-size: 32px;
+    font-weight: 700;
+    padding-left: 420px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #000000;
+}
+.gs-faq-que {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000000;
+}
+.gs-faq-ans {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+}
+
+
+
+@media (max-width: 1200px) {
+    .Heading {
+        font-size: 28px;
+    }
+    .step-custom, .gs-faq-que {
+        font-size: 28px;
+    }
+    .gs-que, .gs-text, .gs-points, .gs-faq-ans {
+        font-size: 22px;
+        padding-left: 120px;
+        padding-right: 40px;
+    }
+    .gs-faq-heading {
+        padding-left: 300px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .Heading {
+        font-size: 26px;
+    }
+    .step-custom, .gs-faq-que {
+        font-size: 26px;
+        padding-left: 50px;
+    }
+    .gs-que, .gs-text, .gs-points, .gs-faq-ans {
+        font-size: 20px;
+        padding-left: 80px;
+        padding-right: 30px;
+    }
+    .gs-faq-heading {
+        padding-left: 200px;
+        font-size: 28px;
+    }
+    .gs-faq-que {
+        font-size: 26px;
+    }
+    .gs-faq-ans {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Heading {
+        font-size: 24px;
+    }
+    .step-custom, .gs-faq-que {
+        font-size: 24px;
+        padding-left: 30px;
+    }
+    .gs-que, .gs-text, .gs-points {
+        font-size: 18px;
+        padding-left: 50px;
+        padding-right: 20px;
+    }
+    .gs-faq-heading {
+        padding-left: 100px;
+        font-size: 26px;
+        text-align: center;
+    }
+    .gs-faq-que {
+        font-size: 22px;
+    }
+    .gs-faq-ans {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .Heading {
+        font-size: 20px;
+    }
+    .step-custom, .gs-faq-que {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .gs-que, .gs-text, .gs-points {
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .gs-faq-heading {
+        padding-left: 0;
+        font-size: 24px;
+        text-align: center;
+    }
+    .gs-faq-que {
+        font-size: 18px;
+    }
+    .gs-faq-ans {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .Heading {
+        font-size: 18px;
+    }
+    .step-custom, .gs-faq-que {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    .gs-que, .gs-text, .gs-points {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+    .gs-faq-heading {
+        font-size: 20px;
+    }
+    .gs-faq-que {
+        font-size: 16px;
+    }
+    .gs-faq-ans {
+        font-size: 14px;
+    }
+}

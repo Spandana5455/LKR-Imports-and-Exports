@@ -1,0 +1,491 @@
+.what-does-it-cost-section {
+    background-image: url('./images/whatdoespage3.png');
+    border-bottom: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    position: relative;                
+    z-index: 1;                       
+    overflow: visible !important;
+}
+.what-does-it-cost-text {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #003AA5;
+    padding-left: 400px;
+    padding-bottom: 30px;
+}
+.what-does-heading {
+    font-size: 32px;
+    font-weight: 700;
+}
+.cargo-img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.what-does-text {
+    font-size: 24px;
+    font-weight: 400;
+}
+.what-does-head {
+    font-size: 24px;
+    font-weight: 400;
+}
+.what-does-points {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.rectangle-bg {
+    background-image: url('./images/rectanglepage3.png');
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    border-radius: 0 100px 0 0 !important; 
+    background-clip: padding-box !important;
+    padding: 20px !important;
+    color: black !important; 
+    width: 610px !important;
+    height: 560px !important;
+    position: relative !important;
+    z-index: 1!important;
+    display: block !important;
+}
+.what-does-rectangle-text {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.what-does-rectangle-text-two {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.accordion-item {
+    border: none !important;
+    box-shadow: none !important;
+}
+  
+.accordion-button {
+    background-color: transparent;
+    box-shadow: none !important;
+    border: none !important;
+    transition: all 0.3s ease-in-out;
+    font-size: 32px;
+    font-weight: 700;
+    color: black; 
+    transition: background-color 0.3s;
+}
+  
+.accordion-button:focus {
+    box-shadow: none !important;
+    outline: none;
+}
+  
+.accordion-body {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    font-size: 24px;
+    font-weight: 400;
+    color: black; 
+    transition: background-color 0.3s;
+}
+  
+.no-border {
+    border: none !important;
+    box-shadow: none !important;
+}
+  
+.accordion-button:hover {
+    background-color: transparent !important; 
+    color: #000 !important; 
+}
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important; 
+    color: #000 !important; 
+    box-shadow: none !important;
+    outline: none !important;
+}
+.accordion-button::after {
+    font-weight: bolder;     
+    transform: scale(1.8); 
+    transition: transform 0.3s ease;
+}
+.accordion-button:not(.collapsed)::after {
+    font-weight: bolder;       
+    transform: scale(1.8) rotate(180deg);  
+}
+.images-heading {
+    font-size: 32px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+.images-head {
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 50px;
+}
+.card-img-top {
+    width: 365px;
+    height: 188px;
+}
+.card-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+.card-text {
+    font-size: 20px;
+    font-weight: 400;
+}
+.request-button {
+    padding-left: 70px;
+}
+.requestbutton {
+    background-color: #003AA5;  
+    color: white;
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px; 
+}
+.requestbutton:hover {
+    background-color:  #003AA5; /* Darker shade on hover */
+    border-color:  #003AA5;
+}
+.ques {
+    font-size: 24px;
+    font-weight: 600;
+}
+.ans {
+    font-size: 20px;
+    font-weight: 400;
+} 
+
+
+@media (max-width: 768px) {
+    .cargo-img {
+      width: 90%;
+      margin-top: 20px;
+    }
+}
+  
+  
+@media (max-width: 480px) {
+    .cargo-img {
+      width: 100%;
+      margin-top: 15px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .rectangle-bg {
+      width: 100% !important;
+      height: auto !important;
+      border-radius: 0 60px 0 0 !important;
+      padding: 20px 15px !important;
+    }
+  
+    .what-does-rectangle-text,
+    .what-does-rectangle-text-two {
+      font-size: 18px;
+      padding-top: 40px;
+      padding-left: 15px;
+      padding-right: 10px;
+    }
+}
+  
+ 
+@media (max-width: 576px) {
+    .rectangle-bg {
+      width: 100% !important;
+      height: auto !important;
+      border-radius: 0 40px 0 0 !important;
+      padding: 15px 10px !important;
+      margin-bottom: 20px; /* 👈 Adds spacing between the two boxes */
+    }
+  
+    .what-does-rectangle-text,
+    .what-does-rectangle-text-two {
+      font-size: 16px;
+      padding-top: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    /* Stack the columns on top of each other */
+    .row.align-items-center {
+      flex-direction: column;
+    }
+  
+    .col-md-6 {
+      width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .rectangle-bg {
+      width: 100% !important;
+      height: auto !important;
+      border-radius: 0 50px 0 0 !important;
+      padding: 20px 15px !important;
+      margin-bottom: 25px; /* 👈 Adds space between rectangles */
+    }
+  
+    .what-does-rectangle-text,
+    .what-does-rectangle-text-two {
+      font-size: 18px;
+      padding-top: 40px;
+      padding-left: 15px;
+      padding-right: 10px;
+    }
+  
+    .row.align-items-center {
+      flex-direction: column;
+    }
+  
+    .col-md-6 {
+      width: 100%;
+    }
+}
+@media (min-width: 991px) and (max-width: 1212px) {
+    .rectangle-bg {
+      width: 90% !important;
+      height: auto !important;
+      padding: 25px 20px !important;
+      border-radius: 0 80px 0 0 !important;
+      margin-bottom: 20px;
+    }
+  
+    .what-does-rectangle-text,
+    .what-does-rectangle-text-two {
+      font-size: 18px;
+      padding-top: 60px;
+      padding-left: 20px;
+      padding-right: 15px;
+    }
+  
+    .col-md-6 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .row.align-items-center {
+      gap: 20px;
+    }
+}
+  
+  
+@media (min-width: 991px) and (max-width: 1289px) {
+    .rectangle-bg {
+      width: 90% !important;
+      height: auto !important;
+      padding: 25px 20px !important;
+      border-radius: 0 80px 0 0 !important;
+    }
+  
+    .what-does-rectangle-text,
+    .what-does-rectangle-text-two {
+      font-size: 18px;
+      padding-top: 60px;
+      padding-left: 20px;
+      padding-right: 15px;
+    }
+  
+    .col-md-6:not(:last-child) {
+      margin-bottom: 30px; 
+    }
+}
+@media (max-width: 992px) {
+    .card-img-top {
+      max-width: 100%;
+      height: auto;
+    }
+}
+
+@media (min-width: 994px) and (max-width: 1289px) {
+    .card-img-top {
+      width: 90%;
+      height: auto;
+      max-width: 320px;
+      margin: 0 auto;
+      display: block;
+    }
+  
+    .card-title {
+      font-size: 22px;
+    }
+  
+    .card-text {
+      font-size: 18px;
+    }
+  
+    .card {
+      padding: 1.25rem;
+    }
+}
+  
+@media (max-width: 768px) {
+    .card-img-top {
+      width: 100%;
+      height: auto;
+    }
+  
+    .card-title {
+      font-size: 20px;
+    }
+  
+    .card-text {
+      font-size: 18px;
+    }
+  
+    .card {
+      padding: 1rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-img-top {
+      width: 100%;
+      height: auto;
+    }
+  
+    .card-title {
+      font-size: 18px;
+    }
+  
+    .card-text {
+      font-size: 16px;
+    }
+  
+    .card {
+      padding: 0.75rem !important;
+    }
+}
+  
+  
+@media (max-width: 1200px) {
+    .what-does-it-cost-text {
+        font-size: 54px;
+        padding-left: 200px;
+    }
+    .what-does-heading, .images-heading {
+        font-size: 28px;
+    }
+    .what-does-text, .what-does-head, .what-does-points, .accordion-body, .ques {
+        font-size: 22px;
+    }
+    .card-title {
+        font-size: 22px;
+    }
+    .card-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .what-does-it-cost-text {
+        font-size: 48px;
+        padding-left: 100px;
+    }
+    .what-does-heading, .images-heading {
+        font-size: 26px;
+    }
+    .what-does-text, .what-does-head, .what-does-points, .accordion-body, .ques {
+        font-size: 20px;
+    }
+    .card-title {
+        font-size: 20px;
+    }
+    .card-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .what-does-it-cost-text {
+        font-size: 42px;
+        padding-left: 50px;
+        text-align: center;
+    }
+    .what-does-heading, .images-heading {
+        font-size: 24px;
+        text-align: center;
+    }
+    .what-does-text, .what-does-head, .what-does-points, .accordion-body, .ques {
+        font-size: 18px;
+    }
+    .card-title {
+        font-size: 18px;
+    }
+    .card-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .what-does-it-cost-text {
+        font-size: 36px;
+        padding-left: 10px;
+        text-align: center;
+    }
+    .what-does-heading, .images-heading {
+        font-size: 22px;
+        text-align: center;
+    }
+    .what-does-text, .what-does-head, .what-does-points, .accordion-body, .ques {
+        font-size: 16px;
+    }
+    .card-title {
+        font-size: 16px;
+    }
+    .card-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .what-does-it-cost-text {
+        font-size: 30px;
+        padding: 0 5px;
+    }
+    .what-does-heading, .images-heading {
+        font-size: 20px;
+    }
+    .what-does-text, .what-does-head, .what-does-points, .accordion-body, .ques {
+        font-size: 14px;
+    }
+    .card-title {
+        font-size: 14px;
+    }
+    .card-text {
+        font-size: 12px;
+    }
+    .rectangle-bg {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    .what-does-rectangle-text, .what-does-rectangle-text-two {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+}

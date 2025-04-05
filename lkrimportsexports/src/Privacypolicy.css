@@ -1,0 +1,81 @@
+.privacy-policy-heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: #003AA5;
+    padding-top: 60px;
+}
+.privacy-policy-body {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+.privacy-policy-head {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+.privacy-policy-sub-head {
+  font-size: 24px;
+  font-weight: 400;
+}
+.privacy-policy-text {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+
+/* Base styles (already provided) */
+
+@media (max-width: 1200px) {
+  .privacy-policy-heading {
+    font-size: 28px;
+    padding-top: 50px;
+  }
+  .privacy-policy-body,
+  .privacy-policy-head,
+  .privacy-policy-sub-head,
+  .privacy-policy-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .privacy-policy-heading {
+    font-size: 24px;
+    padding-top: 40px;
+  }
+  .privacy-policy-body,
+  .privacy-policy-head,
+  .privacy-policy-sub-head,
+  .privacy-policy-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .privacy-policy-heading {
+    font-size: 22px;
+    padding-top: 30px;
+  }
+  .privacy-policy-body,
+  .privacy-policy-head,
+  .privacy-policy-sub-head,
+  .privacy-policy-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .privacy-policy-heading {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  .privacy-policy-body,
+  .privacy-policy-head,
+  .privacy-policy-sub-head,
+  .privacy-policy-text {
+    font-size: 14px;
+  }
+}
+
+  

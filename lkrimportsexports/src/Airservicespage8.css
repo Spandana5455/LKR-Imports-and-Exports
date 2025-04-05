@@ -1,0 +1,127 @@
+.mixed-air-services-section {
+    background-image: url('./images/airservicespage8.png');
+    border-bottom: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    position: relative;                
+    z-index: 1;                       
+    overflow: visible !important;
+}
+.mixed-air-services-text {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #003AA5;
+    padding-left: 220px;
+    padding-bottom: 15px;
+}
+.air-services-heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+.air-services-head {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+.air-services-body {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+.air-services-points {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+
+
+@media (max-width: 1200px) {
+    .mixed-air-services-text {
+        font-size: 54px;
+        padding-left: 150px;
+    }
+    .air-services-heading {
+        font-size: 28px;
+    }
+    .air-services-head {
+        font-size: 22px;
+    }
+    .air-services-body, .air-services-points {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .mixed-air-services-text {
+        font-size: 48px;
+        padding-left: 100px;
+    }
+    .air-services-heading {
+        font-size: 26px;
+    }
+    .air-services-head {
+        font-size: 20px;
+    }
+    .air-services-body, .air-services-points {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mixed-air-services-text {
+        font-size: 42px;
+        padding-left: 50px;
+        text-align: center;
+    }
+    .air-services-heading {
+        font-size: 24px;
+        text-align: center;
+    }
+    .air-services-head {
+        font-size: 18px;
+    }
+    .air-services-body, .air-services-points {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .mixed-air-services-text {
+        font-size: 36px;
+        padding-left: 20px;
+        text-align: center;
+    }
+    .air-services-heading {
+        font-size: 22px;
+        text-align: center;
+    }
+    .air-services-head {
+        font-size: 16px;
+    }
+    .air-services-body, .air-services-points {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .mixed-air-services-text {
+        font-size: 30px;
+        padding: 0 10px;
+    }
+    .air-services-heading {
+        font-size: 20px;
+    }
+    .air-services-head {
+        font-size: 14px;
+    }
+    .air-services-body, .air-services-points {
+        font-size: 14px;
+    }
+}

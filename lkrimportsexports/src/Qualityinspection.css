@@ -1,0 +1,191 @@
+.quality-inspection-section {
+    background-image: url('./images/qualityinspection.png');
+    border-bottom: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    position: relative;                
+    z-index: 1;                       
+    overflow: visible !important;
+}
+.quality-inspection-item {
+    font-size: 64px;
+    font-weight: 700;
+    color: #003AA5;
+}
+.service-of-product-section {
+    background-color: #B3C4E4;
+}
+.service-of-product-heading {
+    font-size: 32px;
+    font-weight: 700;
+
+}
+.service-of-product-sub-heading {
+    font-size: 24px;
+    font-weight: 600;
+}
+.service-of-product-text {
+    font-size: 24px;
+    font-weight: 400;
+}
+.service-of-product-textquestions {
+    font-size: 24px;
+    font-weight: 500;
+}
+.steps-custom-border {
+    border-radius: 10px;
+    background-color: #F0F3FA;
+}
+.steps-custom-image {
+    padding-left: 120px;
+}
+.steps-heading {
+    font-size: 32px;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+}
+.steps-sub-heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: #CA2127;
+}
+.steps-body {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.price-of-quality-inspection-section {
+    background-color: #B3C4E4;
+}
+.price-of-quality-inspection-heading {
+    font-size: 32px;
+    font-weight: 700;
+}
+.price-of-quality-inspection-body {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 50px;
+}
+.price-of-quality-inspection-body-last {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 50px;
+    border-bottom: 1px solid black;
+    display: inline;
+}
+.services-of-chinese-manufacturing-section {
+    background-color: #B3C4E433;
+}
+.vertical-line {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background-color: #000;
+    height: 220px;
+}
+.vertical-line-two {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 2px;
+    background-color: #000;
+    height: 220px;
+}
+.services-of-chinese-manufacturing-heading {
+   font-size: 24px;
+   font-weight: 700;
+}
+.services-of-chinese-manufacturing-body {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media (max-width: 767px) {
+    .quality-inspection-item {
+      font-size: 32px;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .service-of-product-heading,
+    .steps-heading,
+    .price-of-quality-inspection-heading {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .service-of-product-sub-heading,
+    .service-of-product-text,
+    .service-of-product-textquestions,
+    .steps-sub-heading,
+    .steps-body,
+    .price-of-quality-inspection-body,
+    .price-of-quality-inspection-body-last,
+    .services-of-chinese-manufacturing-heading,
+    .services-of-chinese-manufacturing-body {
+      font-size: 16px;
+      padding: 10px 15px;
+      text-align: left;
+    }
+  
+    .steps-custom-image {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+  
+    .vertical-line,
+    .vertical-line-two {
+      display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .quality-inspection-item {
+      font-size: 48px;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .service-of-product-heading,
+    .steps-heading,
+    .price-of-quality-inspection-heading {
+      font-size: 28px;
+    }
+  
+    .service-of-product-sub-heading,
+    .steps-sub-heading {
+      font-size: 20px;
+    }
+  
+    .service-of-product-text,
+    .service-of-product-textquestions,
+    .steps-body,
+    .price-of-quality-inspection-body,
+    .price-of-quality-inspection-body-last,
+    .services-of-chinese-manufacturing-heading,
+    .services-of-chinese-manufacturing-body {
+      font-size: 18px;
+    }
+  
+    .steps-custom-image {
+      padding-left: 40px;
+    }
+  
+    .vertical-line,
+    .vertical-line-two {
+      height: 160px;
+    }
+}
+  
+  

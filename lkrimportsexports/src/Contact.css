@@ -1,0 +1,94 @@
+.contact-us-heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: #003AA5;
+}
+.contact-form-label {
+    font-size: 24px;
+    font-weight: 600;
+}
+.contact-submit {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    background-color: #003AA5;
+    border: #003AA5;
+    height: 61px;
+    width: 201px;
+    border-radius: 5px;
+}
+.contact-us-section {
+    padding-top: 50px;
+    padding-bottom: 50px ;
+}
+
+.contact-submit:hover {
+    background-color: #003AA5;
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .contact-us-heading {
+        font-size: 28px;
+    }
+    .contact-form-label {
+        font-size: 20px;
+    }
+    .contact-submit {
+        font-size: 20px;
+        height: 55px;
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+    .contact-us-heading {
+        font-size: 26px;
+    }
+    .contact-form-label {
+        font-size: 18px;
+    }
+    .contact-submit {
+        font-size: 18px;
+        height: 50px;
+        width: 160px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+    .contact-us-heading {
+        font-size: 22px;
+    }
+    .contact-form-label {
+        font-size: 16px;
+    }
+    .contact-submit {
+        font-size: 16px;
+        height: 45px;
+        width: 140px;
+    }
+    .text-center {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact-us-heading {
+        font-size: 20px;
+    }
+    .contact-form-label {
+        font-size: 14px;
+    }
+    .contact-submit {
+        font-size: 14px;
+        height: 40px;
+        width: 120px;
+    }
+}

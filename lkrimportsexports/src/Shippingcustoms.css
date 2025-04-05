@@ -1,0 +1,145 @@
+.shipping-customs-section {
+    background-image: url('./images/shippingcustoms.png');
+    border-bottom: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    position: relative;                
+    z-index: 1;                       
+    overflow: visible !important;
+}
+.shipping-customs-item {
+    font-size: 64px;
+    font-weight: 700;
+    color: #003AA5;
+}
+.shipping-customs-text {
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    line-height: 30px;
+    margin-right: 500px;
+}
+.steps-on-import-section {
+    background-color: #F0F3FA;
+}
+.steps-on-import-heading {
+    font-size: 32px;
+}
+.step-on-import-steps {
+    font-size: 32px;
+    color: #CA2127;
+}
+.step-on-import-title {
+    font-size: 24px;
+    color: black;
+}
+.step-on-import-body {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+}
+.custom-border-radius {
+    border-top-left-radius: 100px !important; 
+    border-bottom-right-radius: 100px;
+}
+
+
+/* For large screens (desktops) */
+@media (max-width: 1200px) {
+    .shipping-customs-item {
+        font-size: 48px;
+    }
+    .shipping-customs-text {
+        font-size: 20px;
+        margin-right: 300px;
+    }
+    .step-on-import-steps,
+    .steps-on-import-heading {
+        font-size: 28px;
+    }
+    .step-on-import-title {
+        font-size: 22px;
+    }
+    .step-on-import-body {
+        font-size: 18px;
+    }
+}
+
+/* For tablets (medium screens) */
+@media (max-width: 992px) {
+    .shipping-customs-item {
+        font-size: 36px;
+    }
+    .shipping-customs-text {
+        font-size: 18px;
+        margin-right: 150px;
+    }
+    .step-on-import-steps,
+    .steps-on-import-heading {
+        font-size: 24px;
+    }
+    .step-on-import-title {
+        font-size: 20px;
+    }
+    .step-on-import-body {
+        font-size: 16px;
+    }
+    .custom-border-radius {
+        border-top-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+    }
+}
+
+/* For mobile devices (small screens) */
+@media (max-width: 768px) {
+    .shipping-customs-item {
+        font-size: 28px;
+    }
+    .shipping-customs-text {
+        font-size: 16px;
+        margin-right: 50px;
+    }
+    .step-on-import-steps,
+    .steps-on-import-heading {
+        font-size: 20px;
+    }
+    .step-on-import-title {
+        font-size: 18px;
+    }
+    .step-on-import-body {
+        font-size: 14px;
+    }
+    .custom-border-radius {
+        border-top-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+    }
+}
+
+/* For very small screens (extra small phones) */
+@media (max-width: 576px) {
+    .shipping-customs-item {
+        font-size: 24px;
+    }
+    .shipping-customs-text {
+        font-size: 14px;
+        margin-right: 20px;
+    }
+    .step-on-import-steps,
+    .steps-on-import-heading {
+        font-size: 18px;
+    }
+    .step-on-import-title {
+        font-size: 16px;
+    }
+    .step-on-import-body {
+        font-size: 12px;
+    }
+    .custom-border-radius {
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+}

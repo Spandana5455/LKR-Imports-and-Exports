@@ -1,0 +1,158 @@
+.blog-heading {
+    font-size: 64px;
+    font-weight: 700;
+    color: #003AA5;
+}
+.blog-card {
+    height: 710px;
+    width: 650px;
+}
+.blog-image {
+    height: 357px;
+    width: 523px;
+    padding-left: 120px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.blog-title {
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.blog-text {
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-right: 60px;
+}
+.blog-learnmore {
+    background-color: #003AA5;
+    color: white;
+    height: 55px;
+    width: 213px;
+    font-size: 20px;
+    font-weight: 600;
+    border: #003AA5;
+}
+.blog-learnmore:hover {
+    background-color: #003AA5;
+    color: white;
+}
+.blog-button {
+    padding-top: 30px;
+}
+
+
+@media (max-width: 1200px) {
+    .blog-heading {
+        font-size: 50px;
+    }
+    .blog-card {
+        height: auto;
+        width: 100%;
+    }
+    .blog-image {
+        height: auto;
+        width: 100%;
+        padding-left: 0;
+    }
+    .blog-title, .blog-text {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .blog-heading {
+        font-size: 45px;
+    }
+    .blog-card {
+        width: 100%;
+    }
+    .blog-image {
+        height: auto;
+        width: 100%;
+        padding-left: 0;
+        padding-top: 30px;
+    }
+    .blog-title, .blog-text {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .blog-learnmore {
+        height: 50px;
+        width: 180px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-heading {
+        font-size: 36px;
+    }
+    .blog-card {
+        width: 100%;
+    }
+    .blog-image {
+        height: auto;
+        width: 100%;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .blog-title {
+        font-size: 18px;
+    }
+    .blog-text {
+        font-size: 16px;
+    }
+    .blog-learnmore {
+        height: 45px;
+        width: 160px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .blog-heading {
+        font-size: 28px;
+    }
+    .blog-card {
+        width: 100%;
+    }
+    .blog-image {
+        height: auto;
+        width: 100%;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+    .blog-title {
+        font-size: 16px;
+    }
+    .blog-text {
+        font-size: 14px;
+    }
+    .blog-learnmore {
+        height: 40px;
+        width: 140px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .blog-heading {
+        font-size: 24px;
+    }
+    .blog-title {
+        font-size: 14px;
+    }
+    .blog-text {
+        font-size: 12px;
+    }
+    .blog-learnmore {
+        height: 35px;
+        width: 120px;
+        font-size: 12px;
+    }
+}

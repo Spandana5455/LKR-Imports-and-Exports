@@ -1,0 +1,187 @@
+.order-production-section {
+    background-image: url('./images/orderproduction.png');
+    border-bottom: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    position: relative;                
+    z-index: 1;                       
+    overflow: visible !important;
+}
+.order-production-item {
+    font-size: 64px;
+    font-weight: 700;
+    color: #003AA5;
+}
+.order-production-text {
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    padding-right: 450px;
+    line-height: 30px;
+    padding-top: 20px;
+}
+.placing-order-section{
+    background-color: #B3C4E4;
+}
+.placing-order-heading {
+    font-size: 32px;
+    font-weight: 700;
+}
+.placing-order-text {
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    padding-right: 40px;
+}
+.discuss-price-section {
+    background-color: #B3C4E433;
+}
+.discuss-price-heading {
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+.discuss-price-text {
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    padding-right: 40px;
+}
+.dates-of-delivery-section {
+    background-color: #B3C4E4;
+}
+.dates-of-delivery-heading {
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+.dates-of-delivery-text {
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    padding-right: 40px;
+}
+.terms-of-payment-section {
+    background-color: #B3C4E433;
+}
+.terms-of-payment-heading {
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+.terms-of-payment-text {
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    padding-right: 40px;
+}
+.follow-up-section {
+    background-color: #B3C4E4;
+}
+.follow-up-heading {
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+.follow-up-text {
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+}
+.potential-heading {
+    font-size: 64px;
+    font-weight: 700;
+    color: #0000004D;
+    padding-left: 40px;
+    line-height: 90px;
+}
+.potential-head {
+    font-size: 24px;
+}
+.potential-text {
+    font-size: 24px;
+    font-weight: 400;
+}
+.process-card {
+    background-color: #003AA580;  
+    border-radius: 10px;
+    color: black;
+    padding: 15px;
+    text-align: left;
+    height: 550px;
+}
+  
+.process-card h5 {
+    font-size: 32px;
+    font-weight: 700;
+}
+  
+.process-card p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+  
+.process-card .card-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 5px;
+    color: #CA2127;
+}
+  
+
+
+/* Default styles for large screens (Desktops) */
+@media (min-width: 1200px) {
+    .order-production-text {
+        padding-right: 450px;
+    }
+}
+
+/* Medium screens (Tablets: 992px and below) */
+@media (max-width: 992px) {
+    .order-production-text {
+        padding-right: 200px;
+        font-size: 22px;
+    }
+
+    .process-card {
+        height: auto;
+        padding: 20px;
+    }
+
+    .potential-heading {
+        font-size: 48px;
+        line-height: 70px;
+    }
+
+    .order-production-item {
+        font-size: 56px;
+    }
+
+    .order-production-section {
+        padding: 50px 30px;
+    }
+}
+
+/* Small screens (Mobile: 768px and below) */
+@media (max-width: 768px) {
+    .order-production-section {
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+        padding: 40px 20px;
+    }
+
+    .order-production-item {
+        font-size: 48px;
+    }
+
+    .order-production-text {
+        padding-right: 0;
+    }
+}
