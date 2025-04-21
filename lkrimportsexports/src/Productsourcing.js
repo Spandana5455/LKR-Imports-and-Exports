@@ -143,7 +143,7 @@ const Productsourcing = () => {
         <div className="product-sourcing-section">
             <div className="container">
                 <div className="row align-items-center" style={{ minHeight: "100vh" }}>
-                    <h1 className="product-sourcing-item">sourcing products
+                    <h1 className="product-sourcing-item">Sourcing Products
                     <p className="product-sourcing-text">When it comes to product sourcing, there is no secret formula. Allow the experts to assist you in obtaining the greatest 
                         price for your product. You can obtain the highest quality goods and commodities thanks to our procurement knowledge and experience.
                     </p>

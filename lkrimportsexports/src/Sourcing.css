@@ -95,6 +95,55 @@
     transform: scale(0.98);
 }
 
+.sourcing-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10px;
+}
+  
+.sourcing-card-container {
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    display: flex;
+    justify-content: center;
+}
+  
+.sourcing-card,
+.sourcing-card-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 367px; 
+    width: 276px;  
+    padding: 35px 20px;
+    border-radius: 8px;
+}
+
+.sourcing-image {
+    height: 185px;
+    width: 185px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.sourcing-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.sourcing-button {
+    padding-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
 @media (max-width: 1200px) {
     .sourcing-item {
         font-size: 54px;
@@ -102,20 +151,22 @@
     .sourcing-text, .sourcing-heading {
         font-size: 28px;
     }
-    .sourcing-card, .sourcing-card-two {
-        height: 350px;
-        width: 260px;
-        padding-left: 30px;
-    }
-    .sourcing-image {
-        height: 160px;
-        width: 160px;
-    }
+  .sourcing-card, .sourcing-card-two {
+    height: 367px; 
+    width: 276px;  
+    padding: 30px 20px;
+  }
+
+  .sourcing-image {
+    height: 160px;
+    width: 160px;
+  }
 }
 
 @media (max-width: 992px) {
     .sourcing-item {
         font-size: 48px;
+        padding-top: 300px;
     }
     .sourcing-text, .sourcing-heading {
         font-size: 24px;
@@ -123,19 +174,22 @@
     .sourcing-head, .sourcing-body {
         font-size: 20px;
     }
-    .sourcing-card, .sourcing-card-two {
-        height: 320px;
-        width: 240px;
-        padding-left: 25px;
-    }
-    .sourcing-image {
-        height: 140px;
-        width: 140px;
-    }
-    .sourcing-knowmore {
-        font-size: 14px;
-        padding: 10px 20px;
-    }
+  .sourcing-card, .sourcing-card-two {
+    height: 367px; 
+    width: 276px;  
+    padding: 25px 20px;
+  }
+
+  .sourcing-image {
+    height: 200px;
+    width: 200px;
+    padding-top: 30px;
+  }
+
+  .sourcing-knowmore {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -147,6 +201,7 @@
     }
     .sourcing-item {
         font-size: 40px;
+        padding-top: 250px;
     }
     .sourcing-text, .sourcing-heading {
         font-size: 22px;
@@ -154,24 +209,28 @@
     .sourcing-head, .sourcing-body {
         font-size: 18px;
     }
-    .sourcing-card, .sourcing-card-two {
-        height: 300px;
-        width: 100%;
-        padding-left: 15px;
-    }
-    .sourcing-image {
-        height: 120px;
-        width: 120px;
-    }
-    .sourcing-knowmore {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
+  .sourcing-card, .sourcing-card-two {
+    height: 367px; 
+    width: 276px; 
+    padding: 25px 15px;
+  }
+
+  .sourcing-image {
+    height: 200px;
+    width: 200px;
+    padding-top: 30px;
+  }
+
+  .sourcing-knowmore {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
 }
 
 @media (max-width: 576px) {
     .sourcing-item {
         font-size: 32px;
+        padding-top: 150px;
     }
     .sourcing-text, .sourcing-heading {
         font-size: 20px;
@@ -179,24 +238,33 @@
     .sourcing-head, .sourcing-body {
         font-size: 16px;
     }
-    .sourcing-card, .sourcing-card-two {
-        height: auto;
-        width: 100%;
-        padding: 15px;
-    }
-    .sourcing-image {
-        height: 100px;
-        width: 100px;
-    }
-    .sourcing-knowmore {
-        font-size: 12px;
-        padding: 6px 12px;
-    }
+  .sourcing-card-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .sourcing-card, .sourcing-card-two {
+    height: 367px;
+    width: 276px; 
+    padding: 20px 15px;
+  }
+
+  .sourcing-image {
+    height: 200px;
+    width: 200px;
+    padding-top: 30px;
+  }
+
+  .sourcing-knowmore {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
 }
 
 @media (max-width: 400px) {
     .sourcing-item {
         font-size: 28px;
+        padding-top: 150px;
     }
     .sourcing-text, .sourcing-heading {
         font-size: 18px;
@@ -204,14 +272,22 @@
     .sourcing-head, .sourcing-body {
         font-size: 14px;
     }
-    .sourcing-image {
-        height: 80px;
-        width: 80px;
-    }
-    .sourcing-knowmore {
-        font-size: 12px;
-        padding: 5px 10px;
-    }
+  .sourcing-card, .sourcing-card-two {
+    height: 367px;
+    width: 276px; 
+    padding: 15px;
+  }
+
+  .sourcing-image {
+    height: 200px;
+    width: 200px;
+    padding-top: 50px ;
+  }
+
+  .sourcing-knowmore {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 }
 
   

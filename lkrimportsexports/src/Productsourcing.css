@@ -149,200 +149,229 @@
     margin-right: 50px;
 }
 
-
-
-@media (min-width: 769px) and (max-width: 986px) {
-    .product-rectangle-bg {
-      min-height: 600px;
-      padding: 40px 20px;
-    }
-}
-  
-@media (max-width: 768px) {
-    .product-rectangle-bg {
-      min-height: 400px;
-      padding: 30px 15px;
-    }
-}
-  
-  /* Extra large screens (1200px and up) */
-@media (max-width: 1200px) {
-    .product-sourcing-text {
-      padding-right: 400px;
-    }
-    .product-rectangle-bg {
-      margin-left: 40px;
-      height: 600px;
-      width: 500px;
-    }
-}
-  
-  /* Large screens (992px to 1199px) */
-@media (min-width: 990px) and (max-width: 1199px) {
-    .product-rectangle-bg {
-      width: 100%;
-      min-height: 700px;
-      padding: 40px 30px;
-      margin-left: 0;
-    }
-    .product-sourcing-heading {
-      font-size: 32px;
-    }
-    .product-sourcing-text-body {
-      font-size: 18px;
-      padding: 0 10px;
-      line-height: 28px;
-    }
-}
-  
-  /* Medium to large tablets (769px to 986px) */
-@media (min-width: 769px) and (max-width: 986px) {
-    .product-rectangle-bg {
-      width: 100%;
-      min-height: 600px;
-      padding: 40px 20px;
-      margin-left: 0;
-    }
-    .product-sourcing-heading {
-      font-size: 28px;
-      padding: 40px 20px 0 20px;
-    }
-    .product-sourcing-text-body {
-      font-size: 16px;
-      padding: 20px;
-      line-height: 26px;
-    }
-    .row.align-items-center {
-      flex-direction: column;
-    }
-    .col-md-6 {
-      width: 100%;
-    }
-}
-  
-  /* Tablets (577px to 768px) */
-@media (min-width: 577px) and (max-width: 768px) {
-    .product-sourcing-section .row,
-    .row.align-items-center {
-      flex-direction: column;
-      gap: 20px;
-    }
-    .product-sourcing-item {
-      font-size: 36px;
-    }
-    .product-sourcing-text {
-      font-size: 18px;
-      padding-right: 0;
-    }
-    .product-rectangle-bg {
-      width: 100%;
-      min-height: 500px;
-      padding: 30px 15px;
-      margin-left: 0;
-    }
-    .product-sourcing-heading {
-      font-size: 26px;
-      text-align: center;
-    }
-    .product-sourcing-text-body {
-      font-size: 16px;
-      padding: 10px 0;
-      text-align: justify;
-    }
-}
-  
-  /* Phones (max-width: 576px) */
 @media (max-width: 576px) {
-    .product-sourcing-item {
-      font-size: 28px;
-    }
-    .product-sourcing-text {
-      font-size: 16px;
-      padding-right: 0;
-    }
-    .product-rectangle-bg {
-      height: auto;
-      width: 100%;
-      padding: 20px;
-      margin-left: 0;
-    }
-    .product-sourcing-heading {
-      font-size: 22px;
-    }
-    .product-sourcing-text-body {
-      font-size: 14px;
-    }
-}
-  
-  /* Extra small devices (<400px) */
-@media (max-width: 400px) {
-    .product-sourcing-item {
-      font-size: 24px;
-    }
-    .product-sourcing-text {
-      font-size: 14px;
-    }
-    .product-sourcing-text-body {
-      font-size: 14px;
-      line-height: 25px;
-    }
-}
-  
-
-/* Mobile devices (max-width: 767px) */
-@media (max-width: 767px) {
-    .moq-heading {
-      font-size: 20px;
-      padding-top: 30px;
+  .product-sourcing-section,
+  .visit-factory-section,
+  .visit-factory-section-two {
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-    }
-  
-    .moq-body {
+      padding: 20px;
+  }
+
+  .product-sourcing-item {
+      font-size: 32px;
+      text-align: center;
+      padding-top: 250px;
+  }
+
+  .product-sourcing-text {
       font-size: 16px;
       padding-right: 20px;
       padding-left: 20px;
-      text-align: justify;
-    }
-  
-    .moq-img {
-      padding-left: 0;
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
+  }
+
+  .product-rectangle-bg {
+      margin-left: 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+  }
+
+  .product-sourcing-heading {
+    font-size: 20px;
+    padding-left: 40px;
+  }
+  .product-sourcing-head {
+    font-size: 20px;
+    padding-left: 40px;
+  }
+  .getting-started-heading,
+  .visit-factory-heading,
+  .productsourcing-head {
+      font-size: 20px;
+      padding-left: 10px;
+      padding-top: 30px;
+  }
+
+  .product-sourcing-text-body {
+    font-size: 16px;
+    padding-left: 40px;
+  }
+  .product-sourcing-body {
+    font-size: 16px;
+    padding-left: 40px;
+  }
+  .productsourcing-body {
+      font-size: 16px;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  .moq-heading {
+      font-size: 20px;
+      padding-top: 40px;
+  }
+
+  .moq-body {
+      font-size: 16px;
+      padding-right: 20px;
+      padding-left: 10px;
+  }
+
+  .moq-img {
+      padding-left: 10px;
+  }
+
+  .visit-factory-body,
+  .visitfactory-body,
+  .visitfactory-points {
+      font-size: 16px;
+      padding-left: 10px;
+      padding-right: 10px;
+      line-height: 28px;
+  }
+
+  .faq-section {
+      margin-left: 20px;
+      margin-right: 20px;
+  }
 }
-  
-  /* Tablets (min-width: 768px) and (max-width: 991px) */
-@media (min-width: 768px) and (max-width: 991px) {
-    .moq-heading {
-      font-size: 22px;
-      padding-top: 50px;
-    }
-  
-    .moq-body {
+@media (min-width: 577px) and (max-width: 768px) {
+  .product-sourcing-section,
+  .visit-factory-section,
+  .visit-factory-section-two {
+      flex-direction: column;
+      padding: 30px;
+      text-align: center;
+  }
+
+  .product-sourcing-item {
+      font-size: 36px;
+      padding-top: 250px;
+  }
+  .product-rectangle-bg {
+    background-size: contain;
+    margin-left: 0;
+    
+}
+
+  .product-sourcing-text {
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .product-sourcing-text-body{
+    font-size: 20px;
+    padding-left: 50px;
+  }
+  .visit-factory-body,
+  .visitfactory-body,
+  .visitfactory-points {
       font-size: 18px;
-      padding-right: 40px;
-    }
-  
-    .moq-img {
-      padding-left: 30px;
-    }
+      line-height: 28px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .product-sourcing-heading {
+    font-size: 26px;
+    padding-left: 50px;
+  }
+  .visit-factory-heading {
+      font-size: 26px;
+      padding-top: 40px;
+  }
+
+  .product-sourcing-head {
+    font-size: 24px;
+    padding-left: 50px;
+  }
+  .productsourcing-head {
+      font-size: 24px;
+      padding-left: 20px;
+  }
+
+  .product-sourcing-body {
+    font-size: 20px;
+    padding-left: 50px;
+  }
+  .productsourcing-body {
+      font-size: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .faq-section {
+      margin: 30px;
+  }
 }
-@media (min-width: 1188px) and (max-width: 1289px) {
-    .moq-body {
-      padding-right: 40px; /* reduce from 90px */
-    }
-  
-    .moq-img {
-      padding-left: 30px; /* reduce from 70px */
-      max-width: 100%;
-      height: auto;
-    }
-  
-    .moq-heading {
-      padding-top: 50px; /* slightly less vertical space */
-    }
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .product-sourcing-section,
+  .visit-factory-section,
+  .visit-factory-section-two {
+      flex-direction: row;
+      padding: 30px;
+      text-align: center;
+  }
+
+  .product-sourcing-item {
+      font-size: 36px;
+      padding-top: 250px;
+  }
+  .product-rectangle-bg {
+    background-size: contain;
+    margin-left: 0;
+    
 }
-  
-  
+
+  .product-sourcing-text {
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .product-sourcing-text-body{
+    font-size: 20px;
+    padding-left: 50px;
+  }
+  .visit-factory-body,
+  .visitfactory-body,
+  .visitfactory-points {
+      font-size: 18px;
+      line-height: 28px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .product-sourcing-heading {
+    font-size: 26px;
+    padding-left: 50px;
+  }
+  .visit-factory-heading {
+      font-size: 26px;
+      padding-top: 40px;
+  }
+
+  .product-sourcing-head {
+    font-size: 24px;
+    padding-left: 50px;
+  }
+  .productsourcing-head {
+      font-size: 24px;
+      padding-left: 20px;
+  }
+
+  .product-sourcing-body {
+    font-size: 20px;
+    padding-left: 50px;
+  }
+  .productsourcing-body {
+      font-size: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .faq-section {
+      margin: 30px;
+  }
+}

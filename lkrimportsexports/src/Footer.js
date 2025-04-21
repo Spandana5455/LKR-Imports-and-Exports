@@ -44,8 +44,8 @@ const Footer = () => {
             <p className="contact-text">
               Location: 4th Floor, Plot No: 25, 2, 4 And 5, Arunodaya Colony, 
               Vittal Rao Nagar, Madhapur, Hyderabad, Telangana 500081 <br />
-              Reach: +91 9100006518 <br />
-              mail
+              Contact Us: +91 9100006518 <br />
+              Email: 
             </p>
           </Col>
 

@@ -63,9 +63,9 @@ const Sourcing = () => {
 
         <div className="py-5 background-section-one"> 
       <div className="container">
-        <div className="row justify-content-center">
+        <div className="sourcing-cards-wrapper justify-content-center">
           {categories.map((card, index) => (
-            <div className="col-md-4 d-flex justify-content-center" key={index}>
+            <div className="sourcing-cards-wrapper d-flex justify-content-center" key={index}>
               <div className="card shadow-lg rounded sourcing-card">
                 <img
                   src={card.img}
@@ -89,9 +89,9 @@ const Sourcing = () => {
 
     <div className="py-5 background-section-two"> 
       <div className="container">
-        <div className="row justify-content-center">
+        <div className="sourcing-cards-wrapper justify-content-center">
           {carddata.map((card, index) => (
-            <div className="col-md-4 d-flex justify-content-center" key={index}>
+            <div className="sourcing-cards-wrapper d-flex justify-content-center" key={index}>
               <div className="card shadow-lg rounded sourcing-card-two">
                 <img
                   src={card.img}
@@ -116,9 +116,9 @@ const Sourcing = () => {
 
     <div className="py-5 background-section-one"> 
       <div className="container">
-        <div className="row justify-content-center">
+        <div className="sourcing-cards-wrapper justify-content-center">
           {carddata2.map((card, index) => (
-            <div className="col-md-4 d-flex justify-content-center" key={index}>
+            <div className="sourcing-cards-wrapper d-flex justify-content-center" key={index}>
               <div className="card shadow-lg rounded sourcing-card">
                 <img
                   src={card.img}

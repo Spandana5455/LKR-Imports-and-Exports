@@ -140,6 +140,14 @@
     .order-production-text {
         padding-right: 450px;
     }
+    .process-card {
+        background-color: #003AA580;  
+        border-radius: 10px;
+        color: black;
+        padding: 15px;
+        text-align: left;
+        height: 550px;
+    }
 }
 
 /* Medium screens (Tablets: 992px and below) */
@@ -179,6 +187,7 @@
 
     .order-production-item {
         font-size: 48px;
+        padding-top: 300px;
     }
 
     .order-production-text {

@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import './Contact.css';
+import "./Contact.css";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -16,23 +19,49 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Data Submitted: ", formData);
+
+    emailjs
+      .sendForm(
+        "your_service_id",     // replace with your EmailJS service ID
+        "your_template_id",    // replace with your EmailJS template ID
+        form.current,
+        "your_public_key"      // replace with your EmailJS public key
+      )
+      .then(
+        (result) => {
+          console.log("Email successfully sent!", result.text);
+          alert("Thank you! Your message has been sent.");
+          setFormData({ name: "", email: "", mobile: "", message: "" });
+        },
+        (error) => {
+          console.error("Email failed to send:", error.text);
+          alert("Something went wrong. Please try again.");
+        }
+      );
   };
 
   return (
     <div className="container mt-5">
       <h2 className="text-center contact-us-heading mb-4">Contact Us</h2>
-      <form onSubmit={handleSubmit} className="w-50 mx-auto">
+      <form ref={form} onSubmit={handleSubmit} className="w-50 mx-auto">
         <div className="mb-3">
           <label className="contact-form-label">Your Name *</label>
-          <input type="text" className="form-control text-center" name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" required />
+          <input
+            type="text"
+            name="name"
+            className="form-control text-center"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="Your Name"
+            required
+          />
         </div>
         <div className="mb-3">
           <label className="contact-form-label">Your E-Mail *</label>
           <input
             type="email"
-            className="form-control text-center"
             name="email"
+            className="form-control text-center"
             value={formData.email}
             onChange={handleChange}
             placeholder="Your E-Mail"
@@ -43,8 +72,8 @@ const Contact = () => {
           <label className="contact-form-label">Mobile Number *</label>
           <input
             type="tel"
-            className="form-control text-center"
             name="mobile"
+            className="form-control text-center"
             value={formData.mobile}
             onChange={handleChange}
             placeholder="Mobile Number"
@@ -54,8 +83,8 @@ const Contact = () => {
         <div className="mb-3">
           <label className="contact-form-label">Message</label>
           <textarea
-            className="form-control text-center"
             name="message"
+            className="form-control text-center"
             value={formData.message}
             onChange={handleChange}
             placeholder="Your Message"
@@ -63,7 +92,9 @@ const Contact = () => {
           ></textarea>
         </div>
         <div className="text-center contact-us-section">
-        <button type="submit" className="contact-submit">Submit</button>
+          <button type="submit" className="contact-submit">
+            Submit
+          </button>
         </div>
       </form>
     </div>

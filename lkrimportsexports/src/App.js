@@ -30,11 +30,13 @@ import Hotelfurniture from './Hotelfurniture';
 import Electronics from './Electronics';
 import Termsofservice from './Termsofservice';
 import Privacypolicy from './Privacypolicy';
+import ScrollTop from './ScrollTop';
 
 const App = () => {
   return (
     <div className="app-container">
       <CustomNavbar />
+      <ScrollTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/getting-started" element={<Gettingstartedpage1 />} />

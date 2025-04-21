@@ -116,6 +116,9 @@
   .advantages-card {
     height: auto;
   }
+  .consolidation-warehousing-item {
+    padding-top: 300px;
+  }
 }
 
 /* ---------------- Extra Small Devices (max-width: 576px) ---------------- */
@@ -157,6 +160,9 @@
   .advantages-title {
     font-size: 20px;
     padding: 10px;
+  }
+  .consolidation-warehousing-item {
+    padding-top: 300px;
   }
 }
 
