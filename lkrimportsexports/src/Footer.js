@@ -45,7 +45,7 @@ const Footer = () => {
               Location: 4th Floor, Plot No: 25, 2, 4 And 5, Arunodaya Colony, 
               Vittal Rao Nagar, Madhapur, Hyderabad, Telangana 500081 <br />
               Contact Us: +91 9100006518 <br />
-              Email: 
+              Email: contactlkrimportsexports@gmail.com
             </p>
           </Col>
 
@@ -78,7 +78,7 @@ const Footer = () => {
           </Col>
 
           <Col>
-            <Link to="/request-quote">
+            <Link to="/request-quote" className="request-link">
               <button className="px-4 py-2 requestbutton">Request a Quote</button>
             </Link>
           </Col>

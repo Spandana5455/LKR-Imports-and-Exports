@@ -1,17 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { Form, Button, Container } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import emailjs from "emailjs-com";
 import './Requestaquote.css';
 
-emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual EmailJS public key
+emailjs.init("rjpYlBKZsZI3aCnkB");
 
 const Requestaquote = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    importValue: "",
+    company: "",
+    type: "",
+    value: "",
     priceTerm: "",
-    productDescription: "",
+    description: "",
     hsCode: "",
     length: "",
     width: "",
@@ -37,20 +40,21 @@ const Requestaquote = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData)
+    emailjs.send("service_mqjr4k3", "template_l8h8n6l", formData)
       .then(() => {
         setSuccess(true);
         setFormData({
           name: "",
           email: "",
-          importValue: "",
+          company: "",
+          type: "",
+          value: "",
           priceTerm: "",
-          productDescription: "",
-          hsCode: 1,
+          description: "",
+          hsCode: "",
           length: "",
           width: "",
           height: "",
@@ -66,92 +70,125 @@ const Requestaquote = () => {
 
   return (
     <Container className="mt-5">
-      <h3 className="text-center request-a-quote-heading">Request a Quote</h3>
+      <h3 className="text-center request-a-quote-heading">Import/Export Quotation Request</h3>
       <Form onSubmit={handleSubmit}>
-        <Form.Group controlId="name" className="form-request-group">
+        <Form.Group className="form-request-group">
           <Form.Label className="request-title">Your Name *</Form.Label>
           <Form.Control
             type="text"
             className="request-body"
             name="name"
-            placeholder="Your Name"
             value={formData.name}
             onChange={handleChange}
             required
+            placeholder="Enter your full name"
           />
         </Form.Group>
 
-        <Form.Group controlId="email" className="mt-3 form-request-group">
+        <Form.Group className="mt-3 form-request-group">
           <Form.Label className="request-title">Your E-Mail *</Form.Label>
           <Form.Control
             type="email"
             className="request-body"
             name="email"
-            placeholder="Your E-Mail"
             value={formData.email}
             onChange={handleChange}
             required
+            placeholder="Enter your E-mail"
           />
         </Form.Group>
 
-        <Form.Group controlId="importValue" className="mt-3 form-request-group">
-          <Form.Label className="request-title">Value of Import</Form.Label>
+        <Form.Group className="mt-3 form-request-group">
+          <Form.Label className="request-title">Company *</Form.Label>
           <Form.Control
             type="text"
             className="request-body"
-            name="importValue"
-            placeholder="Enter Value"
-            value={formData.importValue}
+            name="company"
+            value={formData.company}
             onChange={handleChange}
+            required
+            placeholder="Your company name"
           />
         </Form.Group>
 
-        <Form.Group controlId="priceTerm" className="mt-3 form-request-group">
-          <Form.Label className="request-title">Price Term</Form.Label>
+        <Form.Group className="mt-3 form-request-group">
+          <Form.Label className="request-title">Request Type *</Form.Label>
+          <Form.Select
+            className="request-body"
+            name="type"
+            value={formData.type}
+            onChange={handleChange}
+            required
+          >
+            <option value=""></option>
+            <option value="Import">Import</option>
+            <option value="Export">Export</option>
+          </Form.Select>
+        </Form.Group>
+
+        <Form.Group className="mt-3 form-request-group">
+          <Form.Label className="request-title">Value of Import/Export *</Form.Label>
+          <Form.Control
+            type="number"
+            className="request-body"
+            name="value"
+            value={formData.importValue}
+            onChange={handleChange}
+            required
+            placeholder="Enter total value in USD"
+          />
+        </Form.Group>
+
+        <Form.Group className="mt-3 form-request-group">
+          <Form.Label className="request-title">Price Term *</Form.Label>
           <Form.Select
             className="request-body"
             name="priceTerm"
             value={formData.priceTerm}
             onChange={handleChange}
+            required
           >
-            <option></option>
-            <option>FOB</option>
-            <option>CIF</option>
-            <option>EXW</option>
-            <option>Not Sure</option>
+            <option value=""></option>
+            <option value="FOB">FOB</option>
+            <option value="CIF">CIF</option>
+            <option value="EXW">EXW</option>
+            <option value="Not Sure">Not Sure</option>
           </Form.Select>
         </Form.Group>
 
-        <Form.Group controlId="productDescription" className="mt-3 form-request-group">
-          <Form.Label className="request-title">Product Description</Form.Label>
+        <Form.Group className="mt-3 form-request-group">
+          <Form.Label className="request-title">Product Description *</Form.Label>
           <Form.Control
-            type="text"
+            as="textarea"
+            rows={3}
             className="request-body"
-            name="productDescription"
-            placeholder="Enter Description"
+            name="description"
             value={formData.productDescription}
             onChange={handleChange}
+            required
+            placeholder="Describe the product you are importing or exporting"
           />
         </Form.Group>
 
-        <Form.Group controlId="hsCode" className="mt-3 form-request-group">
-          <Form.Label className="request-title">HS Code</Form.Label>
-            <Form.Control
-              type="text"
-              className="request-body"
-              name="hscode"
-              placeholder="Enter 6-digitcode"
-              value={formData.hsCode}
-              onChange={handleChange}
-            />
+        <Form.Group className="mt-3 form-request-group">
+          <Form.Label className="request-title">HS Code *</Form.Label>
+          <Form.Control
+            type="text"
+            className="request-body"
+            name="hsCode"
+            value={formData.hsCode}
+            onChange={handleChange}
+            required
+             placeholder="Enter 6-digit HS Code"
+          />
         </Form.Group>
 
-        <Form.Group controlId="cbm" className="mt-3 form-request-group">
-          <Form.Label className="request-title">CBM (L x B x H) Cubic Meter</Form.Label>
+        <Form.Group className="mt-3 form-request-group">
+          <Form.Label className="request-title">CBM (L x B x H) *</Form.Label>
           <div className="d-flex gap-2 mb-2">
-            <Form.Control type="number" placeholder="Length (m)" name="length" value={formData.length} onChange={handleChange} />
-            <Form.Control type="number" placeholder="Width (m)" name="width" value={formData.width} onChange={handleChange} />
-            <Form.Control type="number" placeholder="Height (m)" name="height" value={formData.height} onChange={handleChange} />
+            <Form.Control type="number" placeholder="Length (m)" name="length" value={formData.length} onChange={handleChange} required />
+            <Form.Control type="number" placeholder="Width (m)" name="width" value={formData.width} onChange={handleChange} required />
+            <Form.Control type="number" placeholder="Height (m)" name="height" value={formData.height} onChange={handleChange} required />
           </div>
           <Form.Control
             type="text"
@@ -159,19 +196,21 @@ const Requestaquote = () => {
             name="cbm"
             value={formData.cbm}
             readOnly
+            required
             placeholder="Cubic meter (m³) will be calculated"
           />
         </Form.Group>
 
-        <Form.Group controlId="shipmentMode" className="mt-3 form-request-group">
-          <Form.Label className="request-title">Mode of Shipment</Form.Label>
+        <Form.Group className="mt-3 form-request-group">
+          <Form.Label className="request-title">Mode of Shipment *</Form.Label>
           <Form.Select
             className="request-body"
             name="shipmentMode"
             value={formData.shipmentMode}
             onChange={handleChange}
+            required
           >
-            <option></option>
+            <option value=""></option>
             <option>Air</option>
             <option>Sea</option>
             <option>Mixed</option>
@@ -179,47 +218,51 @@ const Requestaquote = () => {
           </Form.Select>
         </Form.Group>
 
-        <Form.Group controlId="weight" className="mt-3 form-request-group">
-          <Form.Label className="request-title">Weight in Kgs</Form.Label>
+        <Form.Group className="mt-3 form-request-group">
+          <Form.Label className="request-title">Weight in Kgs *</Form.Label>
           <Form.Control
-            type="text"
+            type="number"
             className="request-body"
             name="weight"
-            placeholder="Enter Weight"
             value={formData.weight}
             onChange={handleChange}
+            required
+            placeholder="Enter total weight in kilograms"
           />
         </Form.Group>
 
-        <Form.Group controlId="message" className="mt-3 form-request-group">
-          <Form.Label className="request-title">Your Message</Form.Label>
+        <Form.Group className="mt-3 form-request-group">
+          <Form.Label className="request-title">Your Message *</Form.Label>
           <Form.Control
             as="textarea"
-            rows={3}
+            rows={4}
             className="request-body"
             name="message"
-            placeholder="Enter your message"
             value={formData.message}
             onChange={handleChange}
+            required
           />
         </Form.Group>
 
         <div className="text-center pt-4">
           <Button type="submit" className="mt-4 request-body request-a-quote-button-btn">
-            Submit
+            Submit Request
           </Button>
         </div>
+
         {success && (
           <div className="text-success text-center mt-3">
             Your request has been submitted successfully!
           </div>
         )}
-        <br />
       </Form>
+      <br/>
+      <br/>
     </Container>
   );
 };
 
 export default Requestaquote;
+
 
 

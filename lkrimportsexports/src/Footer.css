@@ -130,6 +130,9 @@
   text-decoration: none;
 }
 
+.request-link {
+  text-decoration: none;
+}
 
 /* Mobile Devices (up to 767px) */
 @media (max-width: 767px) {
@@ -181,6 +184,9 @@
       width: 50px !important;
       height: 30px !important;
     }
+    .request-link {
+      text-decoration: none;
+    }
 }
   
   /* Tablets (768px to 1024px) */
@@ -212,6 +218,9 @@
       font-size: 28px;
       bottom: 25px;
       right: 25px;
+    }
+    .request-link {
+      text-decoration: none;
     }
 }
   

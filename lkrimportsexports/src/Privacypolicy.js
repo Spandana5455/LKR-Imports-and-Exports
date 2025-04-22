@@ -126,7 +126,7 @@ const Privacypolicy = () => {
             <p className="privacy-policy-body">It is recommended that you routinely examine this privacy statement for any updates.  Any modifications to this privacy statement take effect as soon as they are published on this page.</p>
             <h5 className="privacy-policy-head">Reach Out to Us </h5>
             <p className="privacy-policy-body"><strong className="privacy-policy-text">You can reach us at: </strong>if you have any queries concerning this privacy statement. </p>
-            <p className="privacy-policy-body">mail.com is the email address</p>
+            <p className="privacy-policy-body">contactlkrimportsexports@gmail.com</p>
         </div>
         </>
     )

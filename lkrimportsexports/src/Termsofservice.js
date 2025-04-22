@@ -81,7 +81,7 @@ const Termsofservice = () => {
             </p>
             <h5 className="terms-of-service-head">Reach Out to Us </h5>
             <p className="terms-of-service-body">You can reach us at: if you have any issues concerning our terms and conditions.</p>
-            <p className="terms-of-service-body">.com is the email address </p>
+            <p className="terms-of-service-body">contactlkrimportsexports@gmail.com  </p>
         </div>
     )
 }

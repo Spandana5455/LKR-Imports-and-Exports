@@ -8,8 +8,8 @@ const Contact = () => {
 
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
-    mobile: "",
+    user_email: "",
+    phone: "",
     message: "",
   });
 
@@ -22,10 +22,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "your_service_id",     // replace with your EmailJS service ID
-        "your_template_id",    // replace with your EmailJS template ID
+        "service_3hw6lzi",     // replace with your EmailJS service ID
+        "template_ofy1qmr",    // replace with your EmailJS template ID
         form.current,
-        "your_public_key"      // replace with your EmailJS public key
+        "rjpYlBKZsZI3aCnkB"      // replace with your EmailJS public key
       )
       .then(
         (result) => {
@@ -60,7 +60,7 @@ const Contact = () => {
           <label className="contact-form-label">Your E-Mail *</label>
           <input
             type="email"
-            name="email"
+            name="user_email"
             className="form-control text-center"
             value={formData.email}
             onChange={handleChange}
@@ -72,7 +72,7 @@ const Contact = () => {
           <label className="contact-form-label">Mobile Number *</label>
           <input
             type="tel"
-            name="mobile"
+            name="phone"
             className="form-control text-center"
             value={formData.mobile}
             onChange={handleChange}
