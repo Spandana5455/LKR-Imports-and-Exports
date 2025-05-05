@@ -59,6 +59,17 @@
   color: black !important;
   background-color: white;
 }
+.dropdown-menu {
+  display: none;
+}
+.dropdown-menu.show {
+  display: block;
+}
+.rotated {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
 
 /* Hide dropdown arrow */
 .navbar .dropdown-toggle::after {

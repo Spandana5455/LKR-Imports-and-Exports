@@ -23,6 +23,7 @@ const CustomNavbar = () => {
   const toggleDropdown = (id) => {
     setOpenDropdown(openDropdown === id ? null : id);
   };
+  const isMobile = window.innerWidth < 992;
 
   return (
     <div className="navbar-section">
@@ -44,8 +45,12 @@ const CustomNavbar = () => {
             <ul className="navbar-nav">
 
               {/* Dropdown - Getting Started */}
-              <li className="nav-item dropdown">
-                <span className="nav-link dropdown-toggle" role="button" onClick={() => toggleDropdown('started')}>
+              <li className="nav-item dropdown" 
+              onMouseEnter={!isMobile ? () => setOpenDropdown('started') : null}
+              onMouseLeave={!isMobile ? () => setOpenDropdown(null) : null}
+              onClick={isMobile ? () => toggleDropdown('started') : null}
+              >
+                <span className="nav-link dropdown-toggle" role="button">
                   Getting Started <FaChevronDown className={openDropdown === 'started' ? 'rotated' : ''} />
                 </span>
                 <ul className={`dropdown-menu vertical-dropdown ${openDropdown === 'started' ? 'show' : ''}`}>
@@ -60,8 +65,12 @@ const CustomNavbar = () => {
               </li>
 
               {/* Dropdown - 6 Steps of Our Services */}
-              <li className="nav-item dropdown">
-                <span className="nav-link dropdown-toggle" role="button" onClick={() => toggleDropdown('services')}>
+              <li className="nav-item dropdown"
+              onMouseEnter={!isMobile ? () => setOpenDropdown('services') : null}
+              onMouseLeave={!isMobile ? () => setOpenDropdown(null) : null}
+              onClick={isMobile ? () => toggleDropdown('services') : null}
+              >
+                <span className="nav-link dropdown-toggle" role="button">
                   6 Steps of Our Services <FaChevronDown className={openDropdown === 'services' ? 'rotated' : ''} />
                 </span>
                 <ul className={`dropdown-menu vertical-dropdown ${openDropdown === 'services' ? 'show' : ''}`}>
@@ -75,8 +84,12 @@ const CustomNavbar = () => {
               </li>
 
               {/* Dropdown - About */}
-              <li className="nav-item dropdown">
-                <span className="nav-link dropdown-toggle" role="button" onClick={() => toggleDropdown('about')}>
+              <li className="nav-item dropdown"
+              onMouseEnter={!isMobile ? () => setOpenDropdown('about') : null}
+              onMouseLeave={!isMobile ? () => setOpenDropdown(null) : null}
+              onClick={isMobile ? () => toggleDropdown('about') : null}
+              >
+                <span className="nav-link dropdown-toggle" role="button">
                   About <FaChevronDown className={openDropdown === 'about' ? 'rotated' : ''} />
                 </span>
                 <ul className={`dropdown-menu vertical-dropdown ${openDropdown === 'about' ? 'show' : ''}`}>
@@ -87,8 +100,12 @@ const CustomNavbar = () => {
               </li>
 
               {/* Dropdown - Sourcing */}
-              <li className="nav-item dropdown">
-                <span className="nav-link dropdown-toggle" role="button" onClick={() => toggleDropdown('sourcing')}>
+              <li className="nav-item dropdown"
+              onMouseEnter={!isMobile ? () => setOpenDropdown('sourcing') : null}
+              onMouseLeave={!isMobile ? () => setOpenDropdown(null) : null}
+              onClick={isMobile ? () => toggleDropdown('sourcing') : null}
+              >
+                <span className="nav-link dropdown-toggle" role="button">
                   Sourcing <FaChevronDown className={openDropdown === 'sourcing' ? 'rotated' : ''} />
                 </span>
                 <ul className={`dropdown-menu vertical-dropdown ${openDropdown === 'sourcing' ? 'show' : ''}`}>
